@@ -1,2 +1,16 @@
-# check-eyeblinking
-opencv를 이용하여 만든것이구요... 대학교 2학년때 SVSIP에 참가했었을때 만들었던 모델입니다. https://youtu.be/dJjzTo8_x3c 개발자 빵형님이 만드신 모델에 사진데이터 조금 추가하여 모델을 만들고 비디오를 통해 눈 깜빡임이 몇인지를 측정했습니다. 초단위로 리셋한게 아닌 프레임 단위로 리셋한것이라 오래감고 있으면 계속 카운트 됩니다. 몇초동안 깜빡임이 적다면 경고창도 넣었네요
+# Eye Blink Detector (눈 깜빡임 감지기)
+
+- Recognize whether eye is opened or closed on image
+- Test on video file
+
+**Click image to see [demo video](https://youtu.be/dJjzTo8_x3c)!**  
+
+[![result.png](https://github.com/kairess/eye_blink_detector/raw/master/videos/result.gif)](https://youtu.be/dJjzTo8_x3c)
+
+## Dependencies
+- Python 3+
+- Keras
+- numpy
+- matplotlib (for visualization)
+  
+for test on real video, download dlib shape_predictor model file [here](https://github.com/davisking/dlib-models/blob/master/shape_predictor_68_face_landmarks.dat.bz2)
